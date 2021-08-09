@@ -1,0 +1,21 @@
+.input {
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.button {
+  height: 37px;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 15px;
+  background-color: cadetblue;
+}
+
+.button:hover {
+  background-color: firebrick;
+}
+
+.form {
+  margin: 20px;
+}
