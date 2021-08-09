@@ -17,7 +17,7 @@ export default function MovieDetailsPage() {
   const history = useHistory();
   const { moviesId } = useParams();
   const [data, setData] = useState(null);
-  const prevLocation = location.state.from;
+  const prevLocation = location?.state?.from ?? '/';
 
   useEffect(() => {
     fetchTakeMoviesById(moviesId)
@@ -50,7 +50,7 @@ export default function MovieDetailsPage() {
               src={
                 data.poster_path
                   ? `https://image.tmdb.org/t/p/w300/${data.poster_path}`
-                  : 'http://placehold.it/300x350'
+                  : 'https://image.tmdb.org/t/p/w300/7rwSXluNWZAluYMOEWBxkPmckES.jpg'
               }
               alt={data.title}
             />

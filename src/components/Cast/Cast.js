@@ -19,7 +19,7 @@ export default function Cast({ moviesId }) {
                 src={
                   actor.profile_path
                     ? `https://image.tmdb.org/t/p/w200/${actor.profile_path}`
-                    : 'http://placehold.it/200x250'
+                    : 'https://image.tmdb.org/t/p/w200/7rwSXluNWZAluYMOEWBxkPmckES.jpg'
                 }
                 alt={actor.name}
               />
