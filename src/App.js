@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch, NavLink, Redirect } from 'react-router-dom';
 
 const HomePage = lazy(() =>
   import('./components/HomePage' /* webpackChunkName: "home-page" */),
@@ -30,7 +30,7 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/movies" exact component={MoviesPage} />
           <Route path="/movies/:moviesId" component={MovieDetailsPage} />
-          <Route component={HomePage} />
+          <Redirect to="/" />
         </Switch>
       </Suspense>
     </div>
